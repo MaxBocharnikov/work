@@ -3,58 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=500, initial-scale=1">
-    <title>ColorPicker</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Work</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <article class="picker">
-        <div class="picker__wrapper">
-
-            <header class="picker__header">
-                <div class="picker__preview"></div>
-            </header>
-
-            <main class="picker__main">
-                <input type="text" class="picker__input picker__input--main">
-                <div class="picker__chooser picker__chooser--red">
-                    <div class="picker__field">
-                        <label class="picker__label" for="red">R:</label>
-                        <input id="red" type="number" class="picker__input picker__input--chooser picker__input--red">
-                    </div>
-                    <div class="picker__scale picker__scale--red">
-                        <div class="picker__range"></div>
-                    </div>
-                </div>
-
-                <div class="picker__chooser picker__chooser--green">
-                    <div class="picker__field">
-                        <label class="picker__label" for="green">G:</label>
-                        <input id="green" type="number" maxlength="3" class="picker__input picker__input--chooser picker__input--green">
-                    </div>
-                    <div class="picker__scale picker__scale--green">
-                        <div class="picker__range"></div>
-                    </div>
-                </div>
-
-
-                <div class="picker__chooser picker__chooser--blue">
-                    <div class="picker__field">
-                        <label class="picker__label" for="blue">B:</label>
-                        <input id="blue" type="number" class="picker__input picker__input--chooser picker__input--blue">
-                    </div>
-                    <div class="picker__scale picker__scale--blue">
-                        <div class="picker__range"></div>
-                    </div>
-                </div>
-
-
-            </main>
+    <header class="page-header">
+        <div class="page-header__wrapper wrapper">
+            <a href="#" class="page-header__logo">
+                <img src="" alt="work">
+            </a>
         </div>
-    </article>
 
-<script src="js/main.js"></script>
-<script src="js/drag.js"></script>
+        <ul class="page-header__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item" href="#"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item">Мои магазины</li>
+        </ul>
+
+        <div class="page-header__user-block userblock">
+            <div class="userblock__messages"></div>
+            <div class="userblock__profile">
+                <img class="userblock__avatar" src="#" alt="avatar">
+                <span class="userblock__name"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <div class="page-main__wrapper wrapper">
+            <nav class="page-main__sidebar sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item"><a href="#"></a>Главная</li>
+                    <li class="sidebar__item"><a href="#"></a>Мои магазины</li>
+                    <li class="sidebar__item"><a href="#"></a>Промоматериалы</li>
+                    <li class="sidebar__item"><a href="#"></a>Статистика</li>
+                    <li class="sidebar__item"><a href="#"></a>Баланс</li>
+                    <li class="sidebar__item"><a href="#"></a>Персональный данные</li>
+                    <li class="sidebar__item"><a href="#"></a>FAQ</li>
+                    <li class="sidebar__item"><a href="#"></a>Техподдержка</li>
+                    <li class="sidebar__item"><a href="#"></a>Выход</li>
+                </ul>
+            </nav>
+
+            <section class="page-main__content content">
+                <button class="content__create-button">Создать свой магазин</button>
+                <h3 class="content__title">Управление магазинами</h3>
+                <table class="content__table table">
+                    <thead class="table__header">
+                    <tr class="table__row table__row--header row">
+                        <th class="table__cell table__cell--header">№</th>
+                        <th class="table__cell table__cell--header">Название</th>
+                        <th class="table__cell table__cell--header">Адрес</th>
+                        <th class="table__cell table__cell--header">Действие</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__row row">
+                            <td class="table__cell table__cell--body">12345</td>
+                            <td class="table__cell table__cell--body">Дипломная работа</td>
+                            <td class="table__cell table__cell--body">http://www.work5.ru/services</td>
+                            <td class="table__cell table__cell--body">
+                                <button class="table__button table__button--edit" href="#">Редактировать</button>
+                                <button class="table__button table__button--delete" href="#">Удалить</button>
+                            </td>
+                        </tr>
+
+                        <tr class="table__row row">
+                            <td class="table__cell table__cell--body">12345</td>
+                            <td class="table__cell table__cell--body">Дипломная работа</td>
+                            <td class="table__cell table__cell--body">http://www.work5.ru/services</td>
+                            <td class="table__cell table__cell--body">
+                                <button class="table__button table__button--edit" href="#">Редактировать</button>
+                                <button class="table__button table__button--delete" href="#">Удалить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal modal--create">
+        <div class="modal__header">
+            <h2 class="modal__title">Создать магазин</h2>
+            <button class="modal__close">Закрыть</button>
+        </div>
+
+        <form class="modal__form" action="#" method="post" name="modal__form">
+            <div class="modal__options">
+                <div class="modal__option">
+                    <label class="modal__label" for="template">Шаблон</label>
+                    <select class="modal__select modal__select--template" name="template" id="template"></select>
+                </div>
+
+                <div class="modal__option">
+                    <label class="modal__label" for="color-scheme">Цветовая схема</label>
+                    <select class="modal__select modal__select--scheme" name="color-scheme" id="color-scheme"></select>
+                </div>
+            </div>
+
+            <div class="modal__domain">
+                <label class="modal__label" for="modal__domain-input">Домен</label>
+                <input type="text" class="modal__input" id="modal__domain-input">
+            </div>
+
+            <p class="modal__notes">
+                В названии домена разрешены латиница и "-", запрещается использовать словосочетание Work 5. После
+                создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a
+                    href="#">ссылке</a>
+            </p>
+
+            <button class="modal__button modal__button--cancel">Отмена</button>
+            <input class="modal__button modal__button--submit" type="submit" value="Создать">
+        </form>
+
+    </div>
 </body>
 </html>
