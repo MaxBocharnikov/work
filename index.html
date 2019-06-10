@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <title>ColorPicker</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <article class="picker">
+        <div class="picker__wrapper">
+
+            <header class="picker__header">
+                <div class="picker__preview"></div>
+            </header>
+
+            <main class="picker__main">
+                <input type="text" class="picker__input picker__input--main">
+                <div class="picker__chooser picker__chooser--red">
+                    <div class="picker__field">
+                        <label class="picker__label" for="red">R:</label>
+                        <input id="red" type="number" class="picker__input picker__input--chooser picker__input--red">
+                    </div>
+                    <div class="picker__scale picker__scale--red">
+                        <div class="picker__range"></div>
+                    </div>
+                </div>
+
+                <div class="picker__chooser picker__chooser--green">
+                    <div class="picker__field">
+                        <label class="picker__label" for="green">G:</label>
+                        <input id="green" type="number" maxlength="3" class="picker__input picker__input--chooser picker__input--green">
+                    </div>
+                    <div class="picker__scale picker__scale--green">
+                        <div class="picker__range"></div>
+                    </div>
+                </div>
+
+
+                <div class="picker__chooser picker__chooser--blue">
+                    <div class="picker__field">
+                        <label class="picker__label" for="blue">B:</label>
+                        <input id="blue" type="number" class="picker__input picker__input--chooser picker__input--blue">
+                    </div>
+                    <div class="picker__scale picker__scale--blue">
+                        <div class="picker__range"></div>
+                    </div>
+                </div>
+
+
+            </main>
+        </div>
+    </article>
+
+<script src="js/main.js"></script>
+<script src="js/drag.js"></script>
+</body>
+</html>
