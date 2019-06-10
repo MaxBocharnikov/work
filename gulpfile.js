@@ -91,7 +91,6 @@ gulp.task('style:build', function (done) {
         .pipe(plumber())
         .pipe(less()) //Скомпилируем
         .pipe(prefixer({
-            browsers: ['> 1%, Last 2 versions, iOS 11'],
             cascade: false
         })) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
