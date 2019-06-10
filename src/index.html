@@ -12,140 +12,155 @@
         <svg src="sprite.svg" class="sprite-svg"></svg>
     </div>
 
-    <div class="wrapper row">
-        <aside class="sidebar col-2">
-
-            <a href="#" class="sidebar__logo">
-                <img src="img/logo.jpg" width="106" height="51" alt="work">
-            </a>
-            <nav class="sidebar__nav nav">
-                <ul class="sidebar__nav__list">
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-home"></use>
-                            </svg>
-                            Главная
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item sidebar__nav__item--active">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-shop"></use>
-                            </svg>
-                            Мои магазины
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-megaphone"></use>
-                            </svg>
-                            Промоматериалы
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-pie"></use>
-                            </svg>
-                            Статистика
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-wallet"></use>
-                            </svg>
-                            Баланс
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-profile"></use>
-                            </svg>
-                            Персональный данные
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-info"></use>
-                            </svg>
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-music"></use>
-                            </svg>
-                            Техподдержка
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__item">
-                        <a href="#">
-                            <svg width="20" height="20">
-                                <use xlink:href="#icon-logout"></use>
-                            </svg>
-                            Выход
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-
-        <main class="page-main col-10">
-
-            <ul class="page-header__breadcrumbs breadcrumbs col-6">
-                <li class="breadcrumbs__item" href="#"><a href="#">Главная</a></li>
-                <li class="breadcrumbs__item">Мои магазины</li>
-            </ul>
-
-            <div class="page-header__user-block userblock col-4">
-                <div class="userblock__messages"></div>
-                <div class="userblock__profile">
-                    <img class="userblock__avatar" src="#" alt="avatar">
-                    <span class="userblock__name"></span>
-                </div>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar__wrapper inner__wrapper">
+                <a href="#" class="sidebar__logo">
+                    <img src="img/logo.jpg" width="106" height="51" alt="work">
+                </a>
+                <nav class="sidebar__nav nav">
+                    <ul class="sidebar__nav__list">
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-home"></use>
+                                </svg>
+                                Главная
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item sidebar__nav__item--active">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-shop"></use>
+                                </svg>
+                                Мои магазины
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-megaphone"></use>
+                                </svg>
+                                Промоматериалы
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-pie"></use>
+                                </svg>
+                                Статистика
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-wallet"></use>
+                                </svg>
+                                Баланс
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-profile"></use>
+                                </svg>
+                                Персональный данные
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-info"></use>
+                                </svg>
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-music"></use>
+                                </svg>
+                                Техподдержка
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#icon-logout"></use>
+                                </svg>
+                                Выход
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-            <section class="page-main__content content">
-                <button class="content__create-button">Создать свой магазин</button>
-                <h3 class="content__title">Управление магазинами</h3>
-                <table class="content__table table">
-                    <thead class="table__header">
-                    <tr class="table__row table__row--header row">
-                        <th class="table__cell table__cell--header">№</th>
-                        <th class="table__cell table__cell--header">Название</th>
-                        <th class="table__cell table__cell--header">Адрес</th>
-                        <th class="table__cell table__cell--header">Действие</th>
-                    </tr>
-                    </thead>
-                    <tbody class="table__body">
-                    <tr class="table__row row">
-                        <td class="table__cell table__cell--body">12345</td>
-                        <td class="table__cell table__cell--body">Дипломная работа</td>
-                        <td class="table__cell table__cell--body">http://www.work5.ru/services</td>
-                        <td class="table__cell table__cell--body">
-                            <button class="table__button table__button--edit" href="#">Редактировать</button>
-                            <button class="table__button table__button--delete" href="#">Удалить</button>
-                        </td>
-                    </tr>
+        </aside>
 
-                    <tr class="table__row row">
-                        <td class="table__cell table__cell--body">12345</td>
-                        <td class="table__cell table__cell--body">Дипломная работа</td>
-                        <td class="table__cell table__cell--body">http://www.work5.ru/services</td>
-                        <td class="table__cell table__cell--body">
-                            <button class="table__button table__button--edit" href="#">Редактировать</button>
-                            <button class="table__button table__button--delete" href="#">Удалить</button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </section>
+        <main class="page-main">
+            <div class="page-main__wrapper inner__wrapper">
+
+                <section class="page-main__header">
+                    <ul class="page-main__breadcrumbs breadcrumbs">
+                        <li class="breadcrumbs__item"><a href="#">Главная</a>
+                            <svg width="7" height="9">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item">Мои магазины</li>
+                    </ul>
+
+                    <div class="page-main__user-block userblock">
+                        <div class="userblock__messages userblock__messages--note">
+                            <svg width="22" height="18">
+                                <use xlink:href="#icon-message"></use>
+                            </svg>
+                        </div>
+                        <div class="userblock__profile">
+                            <img class="userblock__avatar" width="45" height="45" src=img/avatar.jpg alt="avatar">
+                            <span class="userblock__name">Максим Дображанский</span>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="page-main__content content">
+                    <button class="content__create-button">Создать свой магазин</button>
+                    <h3 class="content__title">Управление магазинами</h3>
+                    <table class="content__table table">
+                        <thead class="table__header">
+                        <tr class="table__row table__row--header row">
+                            <th class="table__cell table__cell--header">№</th>
+                            <th class="table__cell table__cell--header">Название</th>
+                            <th class="table__cell table__cell--header">Адрес</th>
+                            <th class="table__cell table__cell--header">Действие</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table__body">
+                        <tr class="table__row row">
+                            <td class="table__cell table__cell--body">12345</td>
+                            <td class="table__cell table__cell--body">Дипломная работа</td>
+                            <td class="table__cell table__cell--body">http://www.work5.ru/services</td>
+                            <td class="table__cell table__cell--body">
+                                <button class="table__button table__button--edit" href="#">Редактировать</button>
+                                <button class="table__button table__button--delete" href="#">Удалить</button>
+                            </td>
+                        </tr>
+
+                        <tr class="table__row row">
+                            <td class="table__cell table__cell--body">12345</td>
+                            <td class="table__cell table__cell--body">Дипломная работа</td>
+                            <td class="table__cell table__cell--body">http://www.work5.ru/services</td>
+                            <td class="table__cell table__cell--body">
+                                <button class="table__button table__button--edit" href="#">Редактировать</button>
+                                <button class="table__button table__button--delete" href="#">Удалить</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
         </main>
 
         <div class="modal modal--create">

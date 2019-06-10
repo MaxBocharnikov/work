@@ -1,0 +1,23 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.breadcrumbs {
+  .default;
+  .no-list;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: #656565;
+
+  & svg {
+    margin: 0 7px;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
