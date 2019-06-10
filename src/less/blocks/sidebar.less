@@ -1,0 +1,68 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.sidebar {
+  .default;
+}
+
+.sidebar__logo {
+  display: block;
+  margin-bottom: 32px;
+  padding-left: 24px;
+}
+
+.sidebar__nav__list {
+  .no-list;
+  .default;
+}
+
+.sidebar__nav__item {
+  position: relative;
+  margin-bottom: 40px;
+
+  & a {
+    padding-left: 66px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #7d7d7d;
+    text-decoration: none;
+  }
+
+  & svg {
+    position: absolute;
+
+    left: 24px;
+    top: 0;
+  }
+  &:hover,
+  &:active,
+  &--active {
+    & a {
+      color: #343434;
+    }
+
+    & svg {
+      fill: #6666cc;
+    }
+
+
+  }
+
+  &--active {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 50px;
+
+      left: 0;
+      top: -13px;
+
+      background: #6666cc;
+    }
+
+  }
+
+
+
+}
