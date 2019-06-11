@@ -1,22 +1,48 @@
 @import "../variables.less";
 @import "../mixins.less";
 
+.content {
+  position: relative;
+}
 .content__create-button {
+  .default;
+  width: 185px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 7px 0;
   padding-left: 25px;
+
+  margin-bottom: 35px;
+
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: normal;
+
   background: @success-button-color;
   border-color: @success-button-color;
-
+  box-sizing: border-box;
   & span {
     position: absolute;
-    width: 11px;
-    height: 11px;
 
     top: 7px;
-    left: 7px;
+    left: 16px;
 
     font-size: 20px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: normal;
     color: #ffffff;;
   }
+}
+
+.content__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+
+  margin-bottom: 28px;
+}
+
+.content__table {
+  position: absolute;
+  left: -40px;
 }
