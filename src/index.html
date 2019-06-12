@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=500, initial-scale=1">
     <title>Work</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -100,7 +101,6 @@
 
         <main class="page-main">
             <div class="page-main__wrapper inner__wrapper">
-
                 <section class="page-main__header">
                     <ul class="page-main__breadcrumbs breadcrumbs">
                         <li class="breadcrumbs__item"><a href="#">Главная</a>
@@ -124,59 +124,66 @@
                     </div>
                 </section>
 
-
                 <section class="page-main__content content">
+                    <button class="hamburger hamburger--collapse content__toggle" type="button">
+                          <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                          </span>
+                    </button>
                     <button class="content__create-button button btn">
                         <span>+</span>
                         Создать свой магазин</button>
                     <h3 class="content__title title">Управление магазинами</h3>
-                    <table class="content__table table">
-                        <thead class="table__header">
-                        <tr class="table__row table__row--header row">
-                            <th class="table__cell table__cell--header col-1">№</th>
-                            <th class="table__cell table__cell--header col-3">Название</th>
-                            <th class="table__cell table__cell--header col-4">Адрес</th>
-                            <th class="table__cell table__cell--header col-4">Действие</th>
-                        </tr>
-                        </thead>
-                        <tbody class="table__body">
-                        <tr class="table__row row">
-                            <td class="table__cell table__cell--body col-1">12345</td>
-                            <td class="table__cell table__cell--body col-3">Дипломная работа</td>
-                            <td class="table__cell table__cell--body col-4">http://www.work5.ru/services</td>
-                            <td class="table__cell table__cell--body col-4">
-                                <button class="table__button table__button--edit button btn" href="#">
-                                    <svg width="14" height="14">
-                                        <use xlink:href="#icon-edit"></use>
-                                    </svg>
-                                    Редактировать</button>
-                                <button class="table__button table__button--delete button btn" href="#">
-                                    <svg width="14" height="14">
-                                        <use xlink:href="#icon-cancel"></use>
-                                    </svg>
-                                    Удалить</button>
-                            </td>
-                        </tr>
+                    <div class="table-responsive-sm">
+                        <table class="content__table table">
+                            <thead class="table__header">
+                            <tr class="table__row table__row--header row">
+                                <th class="table__cell table__cell--header col-1">№</th>
+                                <th class="table__cell table__cell--header col-4">Название</th>
+                                <th class="table__cell table__cell--header col-4">Адрес</th>
+                                <th class="table__cell table__cell--header col-3">Действие</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table__body">
+                            <tr class="table__row row">
+                                <td class="table__cell table__cell--body col-1">12345</td>
+                                <td class="table__cell table__cell--body col-4">Дипломная работа</td>
+                                <td class="table__cell table__cell--body col-4">http://www.work5.ru/services</td>
+                                <td class="table__cell table__cell--body col-3">
+                                    <button class="table__button table__button--edit button btn" href="#">
+                                        <svg width="14" height="14">
+                                            <use xlink:href="#icon-edit"></use>
+                                        </svg>
+                                        Редактировать</button>
+                                    <button class="table__button table__button--delete button btn" href="#">
+                                        <svg width="14" height="14">
+                                            <use xlink:href="#icon-cancel"></use>
+                                        </svg>
+                                        Удалить</button>
+                                </td>
+                            </tr>
 
-                        <tr class="table__row row">
-                            <td class="table__cell table__cell--body col-1">12345</td>
-                            <td class="table__cell table__cell--body col-3">Дипломная работа</td>
-                            <td class="table__cell table__cell--body col-4">http://www.work5.ru/services</td>
-                            <td class="table__cell table__cell--body col-4">
-                                <button class="table__button table__button--edit button btn" href="#">
-                                    <svg width="14" height="14">
-                                        <use xlink:href="#icon-edit"></use>
-                                    </svg>
-                                    Редактировать</button>
-                                <button class="table__button table__button--delete button btn" href="#">
-                                    <svg width="14" height="14">
-                                        <use xlink:href="#icon-cancel"></use>
-                                    </svg>
-                                    Удалить</button>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                            <tr class="table__row row">
+                                <td class="table__cell table__cell--body col-1">12345</td>
+                                <td class="table__cell table__cell--body col-4">Дипломная работа</td>
+                                <td class="table__cell table__cell--body col-4">http://www.work5.ru/services</td>
+                                <td class="table__cell table__cell--body col-3">
+                                    <button class="table__button table__button--edit button btn" href="#">
+                                        <svg width="14" height="14">
+                                            <use xlink:href="#icon-edit"></use>
+                                        </svg>
+                                        Редактировать</button>
+                                    <button class="table__button table__button--delete button btn" href="#">
+                                        <svg width="14" height="14">
+                                            <use xlink:href="#icon-cancel"></use>
+                                        </svg>
+                                        Удалить</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </section>
             </div>
         </main>
@@ -243,6 +250,10 @@
             </div>
         </div>
     </div>
-
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

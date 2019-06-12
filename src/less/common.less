@@ -63,29 +63,42 @@ img {
   height: 35px;
   color: #fff;
   cursor: pointer;
-  outline: none;
 
   font-size: 12px;
   line-height: 21px;
 
+  outline: none !important;
 
-  /*&:hover {
-    opacity: 0.8;
-  }*/
-
-}
-
-button:active, button:focus {
-  outline: none;
-}
-button::-moz-focus-inner {
-  border: 0;
 }
 
 .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 21px;
+}
+
+.hamburger-inner {
+  width: 30px;
+
+  &::before,
+  &::after {
+    width: 30px;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes showingModal {
+  0%   {-webkit-transform: translateY(-2000px);transform: translateY(-2000px)}
+  70%  {-webkit-transform: translateY(30px);transform: translateY(30px)}
+  90%  {-webkit-transform: translateY(-10px);transform: translateY(-10px)}
+  100% {-webkit-transition: 0;transition: 0}
 }
 
 

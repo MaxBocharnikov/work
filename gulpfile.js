@@ -21,7 +21,8 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
+        dist: 'build/dist/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
@@ -30,7 +31,8 @@ var path = {
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         svg: 'src/img/**/icon-*.svg',
         fonts: 'src/fonts/**/*.*',
-        imgfolder: 'src/img/'
+        imgfolder: 'src/img/',
+        dist: 'src/dist/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
@@ -149,6 +151,12 @@ gulp.task('fonts:build', function(done) {
     done();
 });
 
+gulp.task('dist:build', function(done) {
+    gulp.src(path.src.dist)
+        .pipe(gulp.dest(path.build.dist))
+    done();
+});
+
 
 gulp.task("clean", function(done) {
     return del("build");
@@ -168,6 +176,7 @@ gulp.task('build', gulp.series(
     'js:build',
     'style:build',
     'fonts:build',
+    'dist:build',
     'image:build',
     'image:webp',
     'webserver'
