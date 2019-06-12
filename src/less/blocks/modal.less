@@ -9,7 +9,7 @@
   left: 21%;
 
   width: 43%;
-  height: 440px;
+  height: 448px;
 
   background: #ffffff;
 
@@ -108,8 +108,9 @@
 }
 
 .modal__button {
-  width: 150px;
+  width: 24%;
   margin-right: 10px;
+  margin-bottom: 35px;
 
   &--cancel {
     background: #B2B2B2;
@@ -119,6 +120,41 @@
     background: #00CA77;
   }
 }
+
+.modal__error {
+  display: none;
+  position: absolute;
+  bottom: -28px;
+  color:#FF0800;
+  font-size: 12px;
+}
+
+@media (max-width: @tablet-width) {
+  .modal {
+    width: 45%;
+    height: 458px;
+  }
+
+
+  .modal__notes {
+    padding-left: 0;
+    & svg {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .modal {
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+
+    height: 478px;
+  }
+}
+
+
 
 
 

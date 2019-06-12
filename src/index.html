@@ -187,67 +187,67 @@
                 </section>
             </div>
         </main>
+    </div>
+    <div class="modal modal--create">
+        <div class="modal__wrapper">
+            <div class="modal__header">
+                <h2 class="modal__title title">Создать магазин</h2>
+                <button class="modal__close close" data-dismiss="modal" aria-label="Close">
+                    <svg width="17" height="17">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
 
-        <div class="modal modal--create">
-            <div class="modal__wrapper">
-                <div class="modal__header">
-                    <h2 class="modal__title title">Создать магазин</h2>
-                    <button class="modal__close close" data-dismiss="modal" aria-label="Close">
-                        <svg width="17" height="17">
-                            <use xlink:href="#icon-close"></use>
-                        </svg>
-                    </button>
+            <form class="modal__form" action="#" method="post" name="modal__form">
+                <div class="modal__options">
+                    <div class="modal__option">
+                        <label class="modal__label" for="template">Шаблон</label>
+                        <select class="modal__select modal__select--template form-control form-control-lg" name="template" id="template">
+                            <option>Стандартный</option>
+                            <option>Стандартный</option>
+                            <option>Стандартный</option>
+                            <option>Стандартный</option>
+                            <option>Стандартный</option>
+                        </select>
+                    </div>
+
+                    <div class="modal__option">
+                        <label class="modal__label" for="color-scheme">Цветовая схема</label>
+                        <select class="modal__select modal__select--scheme form-control form-control-lg" name="color-scheme" id="color-scheme">
+                            <option>Классический</option>
+                            <option>Классический</option>
+                            <option>Классический</option>
+                            <option>Классический</option>
+                            <option>Классический</option>
+                        </select>
+                    </div>
                 </div>
 
-                <form class="modal__form" action="#" method="post" name="modal__form">
-                    <div class="modal__options">
-                        <div class="modal__option">
-                            <label class="modal__label" for="template">Шаблон</label>
-                            <select class="modal__select modal__select--template form-control form-control-lg" name="template" id="template">
-                                <option>Стандартный</option>
-                                <option>Стандартный</option>
-                                <option>Стандартный</option>
-                                <option>Стандартный</option>
-                                <option>Стандартный</option>
-                            </select>
+                <div class="modal__domain">
+                    <label class="modal__label" for="modal__domain-input">Домен</label>
+                    <div class="modal__group input-group mb-3">
+                        <input type="text" placeholder="Например: ivangrozniy" class="modal__input form-control" id="modal__domain-input">
+                        <div class="modal__append input-group-append">
+                            <span class="modal__group-text input-group-text">.work5.ru</span>
                         </div>
-
-                        <div class="modal__option">
-                            <label class="modal__label" for="color-scheme">Цветовая схема</label>
-                            <select class="modal__select modal__select--scheme form-control form-control-lg" name="color-scheme" id="color-scheme">
-                                <option>Классический</option>
-                                <option>Классический</option>
-                                <option>Классический</option>
-                                <option>Классический</option>
-                                <option>Классический</option>
-                            </select>
-                        </div>
+                        <span class="modal__error"></span>
                     </div>
 
-                    <div class="modal__domain">
-                        <label class="modal__label" for="modal__domain-input">Домен</label>
-                        <div class="modal__group input-group mb-3">
-                            <input type="text" placeholder="Например: ivangrozniy" class="modal__input form-control" id="modal__domain-input">
-                            <div class="modal__append input-group-append">
-                                <span class="modal__group-text input-group-text">.work5.ru</span>
-                            </div>
-                        </div>
+                </div>
 
-                    </div>
+                <p class="modal__notes">
+                    <svg width="52" height="52">
+                        <use xlink:href="#icon-warning"></use>
+                    </svg>
+                    В названии домена разрешены латиница и "-", запрещается использовать словосочетание Work 5. После
+                    создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a
+                        href="#">ссылке</a>
+                </p>
 
-                    <p class="modal__notes">
-                        <svg width="52" height="52">
-                            <use xlink:href="#icon-warning"></use>
-                        </svg>
-                        В названии домена разрешены латиница и "-", запрещается использовать словосочетание Work 5. После
-                        создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a
-                            href="#">ссылке</a>
-                    </p>
-
-                    <button class="modal__button modal__button--cancel btn button">Отмена</button>
-                    <input class="modal__button modal__button--submit btn button" type="submit" value="Создать">
-                </form>
-            </div>
+                <button class="modal__button modal__button--cancel btn button">Отмена</button>
+                <input type="submit" tabindex="-1" class="modal__button modal__button--submit btn button" value="Создать">
+            </form>
         </div>
     </div>
     <script
