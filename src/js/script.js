@@ -20,3 +20,11 @@ $('.content__create-button').on('click', function () {
 $('.modal__close').on('click', function () {
 	hideModal();
 });
+
+$(document).keyup(function(e) {
+    if (e.keyCode === 27) {
+       	if($('.modal--create').hasClass('show')) {
+       		hideModal();
+		}
+    }
+});
